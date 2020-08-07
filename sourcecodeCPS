@@ -1,0 +1,80 @@
+/*new project by me */
+#include<iostream>
+ using namespace std;
+
+
+ int main()
+ {
+ 	cout<<"*****  WELCOME TO THE CAR PARKING SYSTEM  *******/n/t/tDESIGNED BY <<GURIQBAL SINGH>>"<<endl<<endl;
+ 	int r=0,b=0,c=0;
+ 	int input;
+ 	int amount=0,record=0;
+ 	while(true){
+	system("color 0A");
+ 	cout<<"click 1 for rickshaw"<<endl;
+ 	cout<<"click 2 for bus"<<endl;
+ 	cout<<"click 3 for car"<<endl;
+ 	cout<<"click 4 for search the record:"<<endl;
+ 	cout<<"click 5 for delete the records:"<<endl;
+ 	cin>>input;
+ 	
+ 	if(input==1){
+ 		if(record<=50){
+		r++;
+ 		amount=amount+100;
+ 		record=record+1;
+ 		
+	 }
+	 else{
+	 	cout<<"no parking available:("<<endl;
+	 }
+}
+	else if(input==2){
+		if(record<=50){
+		
+		b++;
+		amount=amount+200;
+ 		record=record+1;
+ 	}
+ 	else{
+ 		cout<<"no"<<endl;
+	 }
+}
+	else if(input==3){
+		if(record<=50){
+		c++;
+		amount=amount+300;
+ 		record=record+1;
+ 		
+	}	
+	else{
+		cout<<"no"<<endl;	}
+	}
+	else if(input==4){
+		system("color 0C");
+		
+		cout<<"***************************************"<<endl;
+		
+		cout<<"the total amount is:"<<amount<<endl;
+		cout<<"total record of vehicle is:"<<record<<endl;
+ 		cout<<"total rickhaa::"<<r<<endl;
+ 		cout<<"total car::"<<c<<endl;
+ 		cout<<"total bus::"<<b<<endl;
+ 		cout<<"******************************************"<<endl<<endl;
+ 	
+	}
+	else if(input==5){
+		amount=0;
+		record=0;
+		r=0;
+		c=0;
+		b=0;
+	}
+	else{
+		cout<<"invalid input :("<<endl;
+	}
+}
+	return 0;
+
+ }
+ 
